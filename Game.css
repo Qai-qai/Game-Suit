@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    background-image: url('Bg\ Game.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#box_player1, #box_player2 {
+    margin: 10;
+    padding: 4px;
+    display: grid;
+    text-align: center;
+    background-color: white;
+}
+
+#box_player1 h3 {
+    background-color: rgb(0, 163, 0);
+    color: white;
+    padding: 5px; 
+}
+#box_player2 h3 {
+    background-color: rgb(163, 0, 0);
+    color: white;
+    padding: 5px; 
+}
+
+#box_player1 button, #box_player2 button {
+    color: white;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+    letter-spacing: 3px;
+}
+.start {
+    background-color: rgb(0, 81, 255);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+}
+
+.score_p1, .score_p2 {
+    padding: 5px;
+}
+
+.box_score {
+    position: absolute;
+    margin-top: -200px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb( 0, 60, 255);
+    border: 2px solid white;
+}
+
+@media (max-width: 500px){
+    main {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+        display: grid;
+    }
+    #box_player1, #box_player2{
+        transform: rotate(90deg);
+        margin:0%;
+    }
+    #box_player1 img, #box_player2 img {
+        width: 120px;
+        margin: auto;
+    }
+    .start {
+        transform: rotate(90deg);
+        left: 50%;
+    }
+    .box_score {
+        transform: rotate(90deg);
+        margin-top: 0;
+        right:0;
+    }
+}

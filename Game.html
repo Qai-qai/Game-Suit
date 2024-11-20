@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUIT GAME</title>
+    <link rel="stylesheet" href="Game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image">
+        <main>
+            <span class="box_score">
+                <p style="background-color: rgb(0, 163, 0); padding: 5px">P1</p>
+                <span class="score_p1">0</span> : <span class="score_p2">0</span>
+                <p style="background-color: rgb(163, 0, 0); padding: 5px">P2</p>
+            </span>
+
+            <span class="start"><h3>GO</h3></span>
+
+            <div id="box_player1">
+            <h3>Player 1</h3>
+            <img id="img_player1" src="Kertas.jpeg" width="100px">
+            <button onclick="player1()" disabled>STOP</button>
+        </div>
+        <div id="box_player2">
+            <h3>Player 2</h3>
+            <img id="img_player2" src="Gunting.jpeg" width="100px">
+            <button onclick="player2()" disabled>STOP</button>
+        </div>
+    </main>
+
+    <!-- JavaScript Files -->
+<script src="index.js"></script>
+</body>
+</html>

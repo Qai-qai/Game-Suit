@@ -1,0 +1,24 @@
+/* Gaya dasar untuk tombol */
+.image-button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Bg\ Awal.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Gaya untuk gambar di dalam tombol */
+  .button-icon {
+    width: 150px; /* Menyesuaikan ukuran gambar */
+    height:90px;
+    }
